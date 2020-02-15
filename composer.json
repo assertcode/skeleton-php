@@ -49,7 +49,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "KodeKeep\\Skeleton\\SkeletonServiceProvider"
+                "KodeKeep\\Skeleton\\Providers\\SkeletonServiceProvider"
             ],
             "aliases": {
                 "Skeleton": "KodeKeep\\Skeleton\\SkeletonFacade"
