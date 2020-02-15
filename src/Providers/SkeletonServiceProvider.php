@@ -11,9 +11,8 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\Skeleton;
+namespace KodeKeep\Skeleton\Providers;
 
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;
 
 class SkeletonServiceProvider extends ServiceProvider
@@ -35,7 +34,7 @@ class SkeletonServiceProvider extends ServiceProvider
             ], 'config');
 
             $this->publishes([
-                __DIR__.'/../database/migrations/create_some_table.stub' => $this->getMigrationPath('create_some_table')
+                __DIR__.'/../database/migrations/create_some_table.stub' => $this->getMigrationPath('create_some_table'),
             ], 'migrations');
 
             $this->publishes([

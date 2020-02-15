@@ -13,19 +13,18 @@ declare(strict_types=1);
 
 namespace KodeKeep\Skeleton\Tests;
 
-use Illuminate\Contracts\Console\Application;
 use KodeKeep\Skeleton\Facades\SkeletonFacade;
-use KodeKeep\Skeleton\SkeletonServiceProvider;
+use KodeKeep\Skeleton\Providers\SkeletonServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase
 {
-    protected function getPackageProviders(Application $app): array
+    protected function getPackageProviders($app): array
     {
         return [SkeletonServiceProvider::class];
     }
 
-    protected function getPackageAliases(Application $app): array
+    protected function getPackageAliases($app): array
     {
         return ['Skeleton' => SkeletonFacade::class];
     }
