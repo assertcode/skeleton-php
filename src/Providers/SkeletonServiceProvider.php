@@ -19,26 +19,26 @@ class SkeletonServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/skeleton.php', 'skeleton');
+        $this->mergeConfigFrom(__DIR__.'/../../config/skeleton.php', 'skeleton');
     }
 
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
-            $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+            $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
 
-            $this->loadViewsFrom(__DIR__.'/../resources/views', 'skeleton');
+            $this->loadViewsFrom(__DIR__.'/../../resources/views', 'skeleton');
 
             $this->publishes([
-                __DIR__.'/../config/skeleton.php' => $this->app->configPath('skeleton.php'),
+                __DIR__.'/../../config/skeleton.php' => $this->app->configPath('skeleton.php'),
             ], 'config');
 
             $this->publishes([
-                __DIR__.'/../database/migrations/create_some_table.stub' => $this->getMigrationPath('create_some_table'),
+                __DIR__.'/../../database/migrations/create_some_table.stub' => $this->getMigrationPath('create_some_table'),
             ], 'migrations');
 
             $this->publishes([
-                __DIR__.'/../resources/views' => $this->app->resourcePath('views/vendor/skeleton'),
+                __DIR__.'/../../resources/views' => $this->app->resourcePath('views/vendor/skeleton'),
             ], 'views');
         }
     }

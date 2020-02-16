@@ -11,12 +11,14 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\Skeleton;
+namespace KodeKeep\Skeleton\Facades;
 
-class SkeletonClass
+use Illuminate\Support\Facades\Facade;
+
+class Skeleton extends Facade
 {
-    public function echoPhrase(string $phrase): string
+    protected static function getFacadeAccessor(): string
     {
-        return $phrase;
+        return 'skeleton';
     }
 }

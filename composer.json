@@ -52,7 +52,7 @@
                 "KodeKeep\\Skeleton\\Providers\\SkeletonServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "KodeKeep\\Skeleton\\SkeletonFacade"
+                "Skeleton": "KodeKeep\\Skeleton\\Facades\\Skeleton"
             }
         }
     },
