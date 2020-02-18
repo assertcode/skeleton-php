@@ -4,10 +4,10 @@
 [![Software License](https://badgen.net/packagist/license/kodekeep/:package_name)](https://packagist.org/packages/kodekeep/:package_name)
 [![Build Status](https://img.shields.io/github/workflow/status/kodekeep/:package_name/run-tests?label=tests)](https://github.com/kodekeep/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/:package_name)](https://codeclimate.com/github/kodekeep/:package_name)
-[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/:package_name)](hhttps://codeclimate.com/github/kodekeep/:package_name)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/:package_name)](https://codeclimate.com/github/kodekeep/:package_name)
 [![Total Downloads](https://badgen.net/packagist/dt/kodekeep/:package_name)](https://packagist.org/packages/kodekeep/:package_name)
 
-:package_name was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and is short description of the package.
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides short description of the package.
 
 ## Installation
 
